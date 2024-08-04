@@ -189,3 +189,16 @@ Contoh
 </body>
 </html>
 ```
+
+## Env
+Dalam blade template , bisa menggunakan directive @env(name) untuk mengecek env yang digunakan. Contoh:
+```php
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    @env('test')
+        This is test environment
+    @endenv
+</body>
+</html>
+```
